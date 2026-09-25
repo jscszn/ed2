@@ -1,11 +1,7 @@
 package modelo;
 
-/**
- * Efecto que una acción final del árbol de decisiones produce sobre los
- * indicadores de Ciudad Nova (ver Ciudad.java). Es un objeto inmutable:
- * cada hoja del árbol guarda dos Impacto (uno para cuando la publicación
- * resulta verdadera y otro para cuando resulta falsa).
- */
+// efecto sobre los indicadores de la ciudad. cada hoja del árbol tiene 2:
+// uno si la publicación era verdadera y otro si era falsa
 public class Impacto {
 
     private String mensaje;

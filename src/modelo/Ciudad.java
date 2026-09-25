@@ -1,9 +1,5 @@
 package modelo;
 
-/**
- * Estado de Ciudad Nova (sección 10 del laboratorio). Cada Impacto
- * producido por una hoja del árbol de decisiones se aplica aquí.
- */
 public class Ciudad {
 
     private int informacionVerificada;

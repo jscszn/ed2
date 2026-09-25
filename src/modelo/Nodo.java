@@ -3,25 +3,10 @@ package modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Nodo del árbol general (n-ario) de decisiones de una publicación.
- *
- * Un nodo es de uno de dos tipos, según si tiene hijos o no:
- *  - Nodo de pregunta: guarda el texto que se le muestra al jugador
- *    (por ejemplo "¿Qué quieres hacer con esta publicación?") y una
- *    lista de hijos, uno por cada opción disponible.
- *  - Nodo de acción (hoja): no tiene hijos y en su lugar guarda el
- *    efecto (Impacto) que esa decisión final produce sobre la ciudad,
- *    tanto si la publicación era verdadera como si era falsa.
- *
- * Cada nodo (salvo la raíz) guarda además la "etiquetaRama": el texto
- * de la opción que el jugador eligió en el nodo padre para llegar hasta
- * aquí (p. ej. "Compartir", "Verificar", "Sí", "No", "Ignorar").
- */
 public class Nodo {
 
-    private String pregunta;
-    private String etiquetaRama;
+    private String pregunta; // si es null, el nodo es una acción (hoja)
+    private String etiquetaRama; // con qué opción se llegó aquí desde el padre
     private List<Nodo> hijos;
 
     private Impacto impactoSiVerdadera;

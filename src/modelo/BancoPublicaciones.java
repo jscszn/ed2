@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Conjunto de publicaciones de ejemplo que van llegando al jugador.
- * La selección es aleatoria (componente aleatorio del laboratorio, sección 8):
- * cada partida presenta las publicaciones en un orden distinto.
- */
+// publicaciones de prueba, salen en orden aleatorio
 public class BancoPublicaciones {
 
     private List<Publicacion> publicaciones;

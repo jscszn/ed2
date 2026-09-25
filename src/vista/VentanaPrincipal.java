@@ -20,16 +20,8 @@ import modelo.Impacto;
 import modelo.Nodo;
 import modelo.Publicacion;
 
-/**
- * Interfaz gráfica preliminar de Alcalde Digital.
- *
- * Es "preliminar" porque solo cubre lo que exige la primera entrega:
- * mostrar la publicación actual, recorrer el árbol de decisiones nodo a
- * nodo según los botones que el jugador presiona, y reflejar en pantalla
- * cómo cambian los indicadores de Ciudad Nova. El modo multijugador, el
- * grafo social y la comunicación cliente-servidor se integran en las
- * siguientes entregas, sobre esta misma base.
- */
+// ventana preliminar de la entrega 1, no la hice con el editor de NetBeans
+// porque los botones cambian según el nodo del árbol y se generan solos
 public class VentanaPrincipal extends javax.swing.JFrame {
 
     private final ArbolDecision arbolDecision;
@@ -62,7 +54,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     private void initComponents() {
-        setTitle("Alcalde Digital — Ciudad Nova");
+        setTitle("Alcalde Digital - Ciudad Nova");
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(640, 560);
         setLocationRelativeTo(null);

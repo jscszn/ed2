@@ -1,8 +1,5 @@
 package modelo;
 
-/**
- * Publicación que circula por Civitas, la red social de Ciudad Nova.
- */
 public class Publicacion {
 
     private String autor;
